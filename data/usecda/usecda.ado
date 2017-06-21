@@ -3,5 +3,5 @@
 capture 	program drop usecda
 program 	define usecda
 args 		data 
-use			http://shawnasmith.net/data/`data'.dta, clear
+use			https://shawnana79.github.io/data/`data'.dta, clear
 end
