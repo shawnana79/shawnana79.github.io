@@ -1,5 +1,5 @@
 d 2017-06-19
-d usecda     :Download data and run do files from website 
+d usecda     :Programs for ICPSR-CDA
 d Support    :shawnana79.github.io/data
 
 p usecda     : Download data run do files from website from weebsite 
