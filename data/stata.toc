@@ -1,6 +1,6 @@
 d 2017-06-19
-d usecda     :download data from website 
+d usecda     :Download data and run do files from website 
 d Support    :shawnana79.github.io/data
 
-p usecda     : Download data from weebsite 
+p usecda     : Download data run do files from website from weebsite 
 
