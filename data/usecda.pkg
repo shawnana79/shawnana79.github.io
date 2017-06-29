@@ -3,5 +3,6 @@ d groupsbrm | Downloading data and running do files for ICPSR CDA | 2017-06-22
 d Tamara van der Does (tvanderd@indiana.edu)
 * ado file 
 f usecda/usecda.ado
+f usecda/usecda.sthlp
 * end of package
 
