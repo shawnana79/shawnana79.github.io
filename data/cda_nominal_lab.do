@@ -34,7 +34,7 @@ mlogit 		jobprst i.female mcit3 pub1 phd, baseoutcome(4) nolog
 listcoef, 	help
 
 //5.5) Single Coefficient Wald & LR Test. 
-mlogtest 	1.female mcit3, wald lr
+mlogtest 	female mcit3, wald lr
 
 //5.6) OR Plot using mlogitplot
 mlogitplot 	female mcit3, amount(one sd) ///
