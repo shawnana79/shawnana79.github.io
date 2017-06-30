@@ -1,4 +1,4 @@
-* usecda- version 1.3
+* usecda- version 1.4
 
 capture 	program drop usecda
 program 	define usecda
