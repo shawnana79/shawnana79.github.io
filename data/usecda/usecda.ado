@@ -9,7 +9,7 @@ program 	define usecda
 	  do "https://shawnana79.github.io/data/`file'.do"
 	  } 
 	  // check for lab do file 
-  	if substr("`file'",length("`file'")-2,3) == "lab" {
+  	else if substr("`file'",length("`file'")-2,3) == "lab" {
     di "Running lab do file" 
 	  do "https://shawnana79.github.io/data/`file'.do"
 	  } 
