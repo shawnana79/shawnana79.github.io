@@ -34,10 +34,10 @@ mlogit 		jobprst i.female mcit3 pub1 phd, baseoutcome(4) nolog
 listcoef, 	help
 
 //5.5) Single Coefficient Wald & LR Test. 
-// mlogtest 	1.female mcit3, wald lr
+mlogtest 	1.female mcit3, wald lr
 
 //5.6) OR Plot using mlogitplot
-mlogitplot 	female mcit3, amount(one) ///
+mlogitplot 	female mcit3, amount(one sd) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished)
 
@@ -47,7 +47,7 @@ graph export icpsrcda05-nominal-fig1.png , width(1200) replace
 mchange, atmeans
 
 //5.8b) Marginal Effects Plot
-mchangeplot female mcit3, amount(one) ///
+mchangeplot female mcit3, amount(one sd) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished)
 
@@ -56,12 +56,12 @@ graph export icpsrcda05-nominal-fig2.png , width(1200) replace
 //5.9) 	Calculating and Plotting Discrete Change II at specified levels
 *		of the covariates
 mchange, at(phd=4 pub1=4) atmeans
-mchangeplot female mcit3, amount(one) ///
+mchangeplot female mcit3, amount(one sd) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished) ///
 			min(-.27) max(.29)
 
- graph export icpsrcda05-nominal-fig3.png , width(1200) replace
+graph export icpsrcda05-nominal-fig3.png , width(1200) replace
  
 //5.END) Close Log File and Exit Do File.
 log close
