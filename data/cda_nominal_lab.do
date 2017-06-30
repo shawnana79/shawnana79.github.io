@@ -37,7 +37,7 @@ listcoef, 	help
 // mlogtest 	1.female mcit3, wald lr
 
 //5.6) OR Plot using mlogitplot
-mlogitplot 	female mcit3, amount(one sd) ///
+mlogitplot 	female mcit3, amount(one) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished)
 
