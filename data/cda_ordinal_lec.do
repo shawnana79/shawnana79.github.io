@@ -43,7 +43,7 @@ label var pry3 "Pr(A)"
 label var pry4 "Pr(SA)"
 dotplot pry1 pry2 pry3 pry4, ylabel(0(.25).75)
 
-graph export orm-02-dotplot.png , width(1200) replace
+// graph export orm-02-dotplot.png , width(1200) replace
 
 
 mtable, at(male=(0 1) yr89=(0 1)) atmeans
@@ -85,7 +85,7 @@ graph twoway connected F89Cpr1 F89Cpr2 F89Cpr3 F89Cpr4 F89age ///
  text(.055 65 "Strongly Disagree",place(e)) ///
  , legend(off)
 
- graph export orm-06-cumulativeprob-agew89.png , width(1200) replace 
+ // graph export orm-06-cumulativeprob-agew89.png , width(1200) replace 
 
 
 graph twoway ///
