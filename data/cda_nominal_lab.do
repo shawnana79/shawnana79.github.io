@@ -64,7 +64,7 @@ mchangeplot female mcit3, amount(one) ///
 // graph export icpsrcda05-nominal-fig3.png , width(1200) replace
  
 //5.END) Close Log File and Exit Do File.
-log close
+// log close
 exit
 
 
