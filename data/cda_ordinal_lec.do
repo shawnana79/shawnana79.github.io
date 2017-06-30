@@ -43,7 +43,7 @@ label var pry3 "Pr(A)"
 label var pry4 "Pr(SA)"
 dotplot pry1 pry2 pry3 pry4, ylabel(0(.25).75)
 
-// graph export orm-02-dotplot.png , width(1200) replace
+graph export orm-02-dotplot.png , width(1200) replace
 
 
 mtable, at(male=(0 1) yr89=(0 1)) atmeans
@@ -61,8 +61,8 @@ graph twoway connected M89pr1 M89pr2 M89pr3 M89pr4 M89age ///
  xtitle("Age") ///
  ytitle("Predicted Pr(Support)") ///
  xlabel(20(10)80) ylabel(0(.25).50, grid) ///
- msymbol(none none none none) 
-//  saving(orm-m89.gph,replace)
+ msymbol(none none none none) ///
+ saving(orm-m89.gph,replace)
 
 mgen, at(male=0 yr89=1 age=(20(5)80)) atmeans stub(F89) 
 label var F89Cpr1 "SD"
@@ -84,8 +84,8 @@ graph twoway connected F89Cpr1 F89Cpr2 F89Cpr3 F89Cpr4 F89age ///
  text(.19 58 "Disagree",place(e)) ///
  text(.055 65 "Strongly Disagree",place(e)) ///
  , legend(off)
-
- // graph export orm-06-cumulativeprob-agew89.png , width(1200) replace 
+ 
+ graph export orm-06-cumulativeprob-agew89.png , width(1200) replace 
 
 
 graph twoway ///
