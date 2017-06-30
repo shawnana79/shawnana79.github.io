@@ -51,7 +51,7 @@ mchangeplot female mcit3, amount(one) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished)
 
-graph export icpsrcda05-nominal-fig2.png , width(1200) replace
+// graph export icpsrcda05-nominal-fig2.png , width(1200) replace
 	
 //5.9) 	Calculating and Plotting Discrete Change II at specified levels
 *		of the covariates
