@@ -1,6 +1,6 @@
 //5.1a) Set-up your do-file. 
 capture log close
-// log using icpsrcda14-05-nominal, replace text
+log using icpsrcda14-05-nominal, replace text
 
 //  program:    icpsrcda14-05-nominal.do
 //  task:       Review 5 - Nominal Regression
