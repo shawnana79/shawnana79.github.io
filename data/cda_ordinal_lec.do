@@ -61,8 +61,8 @@ graph twoway connected M89pr1 M89pr2 M89pr3 M89pr4 M89age ///
  xtitle("Age") ///
  ytitle("Predicted Pr(Support)") ///
  xlabel(20(10)80) ylabel(0(.25).50, grid) ///
- msymbol(none none none none) ///
- saving(orm-m89.gph,replace)
+ msymbol(none none none none) 
+ // saving(orm-m89.gph,replace)
 
 mgen, at(male=0 yr89=1 age=(20(5)80)) atmeans stub(F89) 
 label var F89Cpr1 "SD"
