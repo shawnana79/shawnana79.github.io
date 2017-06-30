@@ -41,7 +41,7 @@ mlogitplot 	female mcit3, amount(one) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished)
 
-// graph export icpsrcda05-nominal-fig1.png , width(1200) replace
+graph export icpsrcda05-nominal-fig1.png , width(1200) replace
 
 //5.8a) Discrete Change.  
 mchange, atmeans
@@ -51,7 +51,7 @@ mchangeplot female mcit3, amount(one) ///
 			symbols(Ad Good Str Dis) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished)
 
-// graph export icpsrcda05-nominal-fig2.png , width(1200) replace
+graph export icpsrcda05-nominal-fig2.png , width(1200) replace
 	
 //5.9) 	Calculating and Plotting Discrete Change II at specified levels
 *		of the covariates
@@ -61,10 +61,10 @@ mchangeplot female mcit3, amount(one) ///
 			note(Job: 1=Adeq 2=Good 3=Strong 4=Distinguished) ///
 			min(-.27) max(.29)
 
-// graph export icpsrcda05-nominal-fig3.png , width(1200) replace
+ graph export icpsrcda05-nominal-fig3.png , width(1200) replace
  
 //5.END) Close Log File and Exit Do File.
-// log close
+log close
 exit
 
 
